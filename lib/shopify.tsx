@@ -1,26 +1,165 @@
-// Shopify configuration
-const SHOPIFY_STORE_DOMAIN = process.env.SHOPIFY_STORE_DOMAIN || process.env.NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN
-const SHOPIFY_STOREFRONT_ACCESS_TOKEN =
-  process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN || process.env.NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESS_TOKEN
+// Shopify configuration - server-side only
+const SHOPIFY_STORE_DOMAIN = process.env.SHOPIFY_STORE_DOMAIN
+const SHOPIFY_STOREFRONT_ACCESS_TOKEN = process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN
+
+// Mock data for demo mode when environment variables are missing
+const MOCK_PRODUCTS = [
+  {
+    id: "mock-1",
+    title: "Professional Racing Helmet",
+    handle: "professional-racing-helmet",
+    description: "High-performance motorcycle helmet with advanced safety features and aerodynamic design.",
+    descriptionHtml: "<p>High-performance motorcycle helmet with advanced safety features and aerodynamic design.</p>",
+    images: {
+      edges: [
+        {
+          node: {
+            url: "/motorcycle-helmet-black.png",
+            altText: "Professional Racing Helmet",
+          },
+        },
+      ],
+    },
+    priceRange: {
+      minVariantPrice: {
+        amount: "299.99",
+        currencyCode: "USD",
+      },
+    },
+    availableForSale: true,
+    tags: ["helmet", "safety", "racing"],
+    productType: "Helmet",
+    vendor: "MotoGear Pro",
+    variants: {
+      edges: [
+        {
+          node: {
+            id: "variant-1",
+            title: "Default Title",
+            availableForSale: true,
+            price: {
+              amount: "299.99",
+              currencyCode: "USD",
+            },
+          },
+        },
+      ],
+    },
+  },
+  {
+    id: "mock-2",
+    title: "Racing Leather Gloves",
+    handle: "racing-leather-gloves",
+    description: "Premium leather motorcycle gloves with reinforced knuckles and palm protection.",
+    descriptionHtml: "<p>Premium leather motorcycle gloves with reinforced knuckles and palm protection.</p>",
+    images: {
+      edges: [
+        {
+          node: {
+            url: "/motorcycle-racing-gloves-leather.png",
+            altText: "Racing Leather Gloves",
+          },
+        },
+      ],
+    },
+    priceRange: {
+      minVariantPrice: {
+        amount: "89.99",
+        currencyCode: "USD",
+      },
+    },
+    availableForSale: true,
+    tags: ["gloves", "leather", "protection"],
+    productType: "Gloves",
+    vendor: "MotoGear Pro",
+    variants: {
+      edges: [
+        {
+          node: {
+            id: "variant-2",
+            title: "Default Title",
+            availableForSale: true,
+            price: {
+              amount: "89.99",
+              currencyCode: "USD",
+            },
+          },
+        },
+      ],
+    },
+  },
+  {
+    id: "mock-3",
+    title: "Sport Leather Jacket",
+    handle: "sport-leather-jacket",
+    description: "Professional motorcycle jacket with CE-approved armor and premium leather construction.",
+    descriptionHtml: "<p>Professional motorcycle jacket with CE-approved armor and premium leather construction.</p>",
+    images: {
+      edges: [
+        {
+          node: {
+            url: "/motorcycle-jacket-sport-black-leather.png",
+            altText: "Sport Leather Jacket",
+          },
+        },
+      ],
+    },
+    priceRange: {
+      minVariantPrice: {
+        amount: "449.99",
+        currencyCode: "USD",
+      },
+    },
+    availableForSale: true,
+    tags: ["jacket", "leather", "armor"],
+    productType: "Jacket",
+    vendor: "MotoGear Pro",
+    variants: {
+      edges: [
+        {
+          node: {
+            id: "variant-3",
+            title: "Default Title",
+            availableForSale: true,
+            price: {
+              amount: "449.99",
+              currencyCode: "USD",
+            },
+          },
+        },
+      ],
+    },
+  },
+]
+
+const MOCK_COLLECTIONS = [
+  {
+    id: "mock-collection-1",
+    title: "Safety Gear",
+    handle: "safety-gear",
+    description: "Essential motorcycle safety equipment for every rider.",
+    products: {
+      edges: MOCK_PRODUCTS.map((product) => ({ node: product })),
+    },
+  },
+]
 
 console.log("[SHOPIFY DEBUG] 🔍 Environment Variables Check:")
 console.log("[SHOPIFY DEBUG] SHOPIFY_STORE_DOMAIN:", SHOPIFY_STORE_DOMAIN ? "EXISTS" : "MISSING")
 console.log("[SHOPIFY DEBUG] SHOPIFY_STOREFRONT_ACCESS_TOKEN:", SHOPIFY_STOREFRONT_ACCESS_TOKEN ? "EXISTS" : "MISSING")
 
-if (!SHOPIFY_STORE_DOMAIN || !SHOPIFY_STOREFRONT_ACCESS_TOKEN) {
-  console.error("❌ SHOPIFY CONFIGURATION ERROR:")
-  console.error("Missing required environment variables:")
-  console.error("- SHOPIFY_STORE_DOMAIN:", SHOPIFY_STORE_DOMAIN ? "✅ Set" : "❌ Missing")
-  console.error("- SHOPIFY_STOREFRONT_ACCESS_TOKEN:", SHOPIFY_STOREFRONT_ACCESS_TOKEN ? "✅ Set" : "❌ Missing")
-  console.error("Please configure these in your v0 project settings.")
+const isDemoMode = !SHOPIFY_STORE_DOMAIN || !SHOPIFY_STOREFRONT_ACCESS_TOKEN
+
+if (isDemoMode) {
+  console.log("🎭 DEMO MODE: Using mock data - Shopify environment variables not configured")
+} else {
+  console.log("🛍️ LIVE MODE: Using Shopify API")
 }
 
 async function shopifyFetch(query: string, variables = {}) {
-  if (!SHOPIFY_STORE_DOMAIN || !SHOPIFY_STOREFRONT_ACCESS_TOKEN) {
-    console.log("[SHOPIFY DEBUG] ❌ Missing environment variables - cannot make API call")
-    throw new Error(
-      "Shopify configuration missing. Please set SHOPIFY_STORE_DOMAIN and SHOPIFY_STOREFRONT_ACCESS_TOKEN environment variables.",
-    )
+  if (isDemoMode) {
+    console.log("[SHOPIFY DEBUG] 🎭 Demo mode - skipping API call")
+    throw new Error("Demo mode active - using mock data")
   }
 
   const endpoint = `https://${SHOPIFY_STORE_DOMAIN}/api/2023-10/graphql.json`
@@ -62,6 +201,11 @@ async function shopifyFetch(query: string, variables = {}) {
 // Named export: getProducts
 export async function getProducts(limit = 50) {
   console.log("[SHOPIFY DEBUG] 🛍️ getProducts called with limit:", limit)
+
+  if (isDemoMode) {
+    console.log("[SHOPIFY DEBUG] 🎭 Returning mock products")
+    return MOCK_PRODUCTS.slice(0, limit)
+  }
 
   const query = `
     query getProducts($first: Int!) {
@@ -125,6 +269,11 @@ export async function getProducts(limit = 50) {
 export async function getCollections(limit = 10) {
   console.log("[SHOPIFY DEBUG] 📂 getCollections called with limit:", limit)
 
+  if (isDemoMode) {
+    console.log("[SHOPIFY DEBUG] 🎭 Returning mock collections")
+    return MOCK_COLLECTIONS.slice(0, limit)
+  }
+
   const query = `
     query getCollections($first: Int!) {
       collections(first: $first) {
@@ -182,6 +331,12 @@ export async function getCollections(limit = 10) {
 // Named export: getProduct
 export async function getProduct(handle: string) {
   console.log("[SHOPIFY DEBUG] 🔍 getProduct called with handle:", handle)
+
+  if (isDemoMode) {
+    console.log("[SHOPIFY DEBUG] 🎭 Returning mock product")
+    const product = MOCK_PRODUCTS.find((p) => p.handle === handle)
+    return product || null
+  }
 
   const query = `
     query getProduct($handle: String!) {
@@ -241,6 +396,12 @@ export async function getProduct(handle: string) {
 export async function getCollection(handle: string) {
   console.log("[SHOPIFY DEBUG] 📁 getCollection called with handle:", handle)
 
+  if (isDemoMode) {
+    console.log("[SHOPIFY DEBUG] 🎭 Returning mock collection")
+    const collection = MOCK_COLLECTIONS.find((c) => c.handle === handle)
+    return collection || null
+  }
+
   const query = `
     query getCollection($handle: String!) {
       collection(handle: $handle) {
@@ -297,6 +458,10 @@ export async function getProductsByCollection(handle: string, limit = 50) {
 
   try {
     const collection = await getCollection(handle)
+    if (!collection) {
+      return { collection: null, products: [] }
+    }
+
     const products = collection.products.edges.map((edge: any) => edge.node).slice(0, limit)
     console.log("[SHOPIFY DEBUG] ✅ Products by collection fetched:", products.length)
     return { collection, products }
