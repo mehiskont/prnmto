@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { ChevronLeft, Heart } from "lucide-react"
+import { ChevronLeft } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -63,13 +63,6 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
                         height={300}
                         className="w-full h-auto object-cover aspect-square group-hover:opacity-75 transition-opacity"
                       />
-                      <Button
-                        variant="outline"
-                        size="icon"
-                        className="absolute top-2 right-2 bg-white/80 hover:bg-white rounded-full"
-                      >
-                        <Heart className="h-5 w-5 text-zinc-600" />
-                      </Button>
                     </div>
                     <div className="p-4">
                       <h3 className="font-semibold text-gray-800 group-hover:text-red-600 transition-colors">

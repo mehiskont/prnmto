@@ -21,6 +21,7 @@ export async function POST(request: NextRequest) {
   try {
     const { message, products } = await request.json()
 
+
     if (!process.env.XAI_API_KEY) {
       console.warn("XAI_API_KEY not found, using fallback response")
       return NextResponse.json({
@@ -41,7 +42,7 @@ export async function POST(request: NextRequest) {
     }))
 
     const result = await generateObject({
-      model: xai("grok-beta"),
+      model: xai("grok-2-1212"),
       prompt: `
         Sa oled entusiastlik ja sõbralik mootorratta müüja Pärnu Motopoes. Vasta ALATI eesti keeles!
         
@@ -54,15 +55,16 @@ export async function POST(request: NextRequest) {
         1. Vasta entusiastlikult eesti keeles, aga ÄRA kasuta emotikone
         2. Soovita kuni 2 kõige sobivamad toodet
         3. Määra õiged filtrid:
-           - category: "motorcycles" (mootorrattad), "parts" (varuosad), "accessories" (aksessuaarid), "gear" (varustus)
-           - priceRange: "under-1000", "1000-5000", "5000-15000", "over-15000"
-           - availability: "available" või "unavailable"
-           - searchTerm: märksõna otsinguks
+           - category: AINULT siis kui kasutaja otsib kindlat kategooriat ("motorcycles", "parts", "accessories", "gear")
+           - priceRange: AINULT siis kui kasutaja mainib hinda ("under-1000", "1000-5000", "5000-15000", "over-15000")
+           - availability: AINULT siis kui kasutaja mainib saadavust ("available", "unavailable")
+           - searchTerm: ALATI kui kasutaja otsib kindlat toodet või märksõna
         
         Näited:
-        - "otsin kiivrit" → category: "gear", searchTerm: "kiiver"
+        - "otsin kiivrit" → searchTerm: "kiiver" (EI category)
         - "vajan mootorratast" → category: "motorcycles"
         - "odav varuosa" → category: "parts", priceRange: "under-1000"
+        - "haagis" → searchTerm: "haagis" (EI category, EI priceRange)
         
         Ole entusiastlik, aga ära kasuta emotikone!
       `,
@@ -82,6 +84,15 @@ export async function POST(request: NextRequest) {
     })
   } catch (error) {
     console.error("Chat API error:", error)
+    
+    // If it's an API key error, return a specific message
+    if (error.message?.includes('API key') || error.responseBody?.includes('API key')) {
+      return NextResponse.json({
+        message: "API võti on vigane. Palun kontrollige XAI API võtme konfiguratsiooni.",
+        recommendedProducts: [],
+        filters: null,
+      })
+    }
 
     return NextResponse.json({
       message:

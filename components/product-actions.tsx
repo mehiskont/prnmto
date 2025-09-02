@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Heart, ShoppingCart } from "lucide-react"
+import { ShoppingCart } from "lucide-react"
 import { useCart } from "@/contexts/cart-context"
 
 interface ProductVariant {
@@ -102,10 +102,6 @@ export function ProductActions({ product }: ProductActionsProps) {
         >
           <ShoppingCart className="w-4 h-4 mr-2" />
           {isAddingToCart ? "Lisab..." : "Lisa ostukorvi"}
-        </Button>
-
-        <Button variant="outline" size="icon" className="border-red-600 text-red-600 hover:bg-red-50 bg-transparent">
-          <Heart className="w-4 h-4" />
         </Button>
       </div>
     </div>

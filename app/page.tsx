@@ -50,7 +50,7 @@ export default async function HomePage() {
                 </div>
               }
             >
-              <ProductInfoSection products={allProducts} onFilterChange={() => {}} />
+              <ProductInfoSection products={allProducts} />
             </Suspense>
 
             {/* Product Filter Section */}

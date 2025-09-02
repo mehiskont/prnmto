@@ -21,7 +21,7 @@ interface Product {
 
 interface ProductInfoSectionProps {
   products: Product[]
-  onFilterChange: (filters: {
+  onFilterChange?: (filters: {
     category?: string
     priceRange?: string
     availability?: string
@@ -43,7 +43,7 @@ export function ProductInfoSection({ products, onFilterChange }: ProductInfoSect
     }
 
     // Apply filters
-    onFilterChange(filters)
+    onFilterChange?.(filters)
 
     // Trigger a custom event that the filter component can listen to
     window.dispatchEvent(new CustomEvent("chatbot-filter-change", { detail: filters }))
@@ -63,8 +63,8 @@ export function ProductInfoSection({ products, onFilterChange }: ProductInfoSect
       </div>
 
       {/* Small AI Chatbot on the left side */}
-      <div className="absolute top-8 left-8 z-20 my-9">
-        <div className="w-80 h-96 bg-zinc-900/95 backdrop-blur-sm rounded-lg border border-zinc-700 shadow-2xl flex-col items-start my-10">
+      <div className="absolute top-8 left-8 ml-14 z-20 my-9">
+        <div className="w-[460px] h-96 bg-zinc-900/95 backdrop-blur-sm rounded-lg border border-zinc-700 shadow-2xl flex-col items-start my-10">
           <AISalesmanChatbot products={products} onFilterChange={handleFilterChange} />
         </div>
       </div>

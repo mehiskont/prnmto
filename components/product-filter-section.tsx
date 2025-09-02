@@ -3,7 +3,7 @@
 import { useState, useMemo, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Search, Filter, Heart, ChevronLeft, ChevronRight } from "lucide-react"
+import { Search, Filter, ChevronLeft, ChevronRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -386,13 +386,6 @@ export function ProductFilterSection({ products, collections }: ProductFilterSec
                       height={300}
                       className="w-full h-auto object-cover aspect-square group-hover:opacity-75 transition-opacity"
                     />
-                    <Button
-                      variant="outline"
-                      size="icon"
-                      className="absolute top-2 right-2 bg-white/80 hover:bg-white rounded-full"
-                    >
-                      <Heart className="h-5 w-5 text-zinc-600" />
-                    </Button>
                     {!product.availableForSale && (
                       <Badge className="absolute top-2 left-2 bg-red-600">Pole saadaval</Badge>
                     )}
