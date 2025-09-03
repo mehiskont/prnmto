@@ -13,7 +13,7 @@ interface CollectionPageProps {
 
 export default async function CollectionPage({ params }: CollectionPageProps) {
   const { handle } = await params
-  const { collection, products } = await getProductsByCollection(handle, 20)
+  const { collection, products } = await getProductsByCollection(handle, 400)
 
   if (!collection) {
     notFound()

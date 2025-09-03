@@ -14,7 +14,7 @@ export const revalidate = 0
 export default async function HomePage() {
   // Fetch Shopify data
   const collections = await getCollections(10)
-  const allProducts = await getProducts(50) // Get more products for filtering
+  const allProducts = await getProducts(400) // Get all available products (up to 400)
 
   const navItems = collections.slice(0, 7).map((collection) => ({
     title: collection.title.toUpperCase(),

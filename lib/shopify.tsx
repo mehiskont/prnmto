@@ -43,7 +43,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Apollo+Thunder+140cc",
+            url: "/apollo-thunder-140cc-motorcycle.png",
             altText: "Apollo Premium Thunder 140cc Elektristarter",
           },
         },
@@ -81,7 +81,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Sport+250cc",
+            url: "/sport-motorcycle-250cc.png",
             altText: "Sport Motorcycle 250cc",
           },
         },
@@ -119,7 +119,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Cruiser+500cc",
+            url: "/apollo-thunder-140cc-motorcycle.png",
             altText: "Cruiser Motorcycle 500cc",
           },
         },
@@ -157,7 +157,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Adventure+750cc",
+            url: "/sport-motorcycle-250cc.png",
             altText: "Adventure Motorcycle 750cc",
           },
         },
@@ -195,7 +195,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Supermoto+450cc",
+            url: "/apollo-thunder-140cc-motorcycle.png",
             altText: "Supermoto 450cc",
           },
         },
@@ -233,7 +233,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Enduro+300cc",
+            url: "/sport-motorcycle-250cc.png",
             altText: "Enduro 300cc",
           },
         },
@@ -271,7 +271,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Racing+1000cc",
+            url: "/sport-motorcycle-250cc.png",
             altText: "Racing Motorcycle 1000cc",
           },
         },
@@ -309,7 +309,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Scooter+125cc",
+            url: "/apollo-thunder-140cc-motorcycle.png",
             altText: "Scooter 125cc",
           },
         },
@@ -347,7 +347,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Electric+Bike",
+            url: "/sport-motorcycle-250cc.png",
             altText: "Electric Motorcycle",
           },
         },
@@ -385,7 +385,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Vintage+350cc",
+            url: "/apollo-thunder-140cc-motorcycle.png",
             altText: "Vintage Motorcycle 350cc",
           },
         },
@@ -423,7 +423,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Dirt+Bike+250cc",
+            url: "/sport-motorcycle-250cc.png",
             altText: "Dirt Bike 250cc",
           },
         },
@@ -461,7 +461,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Touring+800cc",
+            url: "/apollo-thunder-140cc-motorcycle.png",
             altText: "Touring Motorcycle 800cc",
           },
         },
@@ -499,7 +499,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Naked+600cc",
+            url: "/sport-motorcycle-250cc.png",
             altText: "Naked Bike 600cc",
           },
         },
@@ -537,7 +537,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Cafe+Racer+400cc",
+            url: "/apollo-thunder-140cc-motorcycle.png",
             altText: "Cafe Racer 400cc",
           },
         },
@@ -575,7 +575,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Mini+Bike+110cc",
+            url: "/apollo-thunder-140cc-motorcycle.png",
             altText: "Mini Bike 110cc",
           },
         },
@@ -615,7 +615,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Engine+Repair+Kit",
+            url: "/engine-repair-kit.png",
             altText: "Mootori Remondi Komplekt",
           },
         },
@@ -653,7 +653,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Brake+Pads",
+            url: "/engine-repair-kit.png",
             altText: "Piduriklotside Komplekt",
           },
         },
@@ -691,7 +691,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Oil+Filter",
+            url: "/engine-repair-kit.png",
             altText: "Õlifilter",
           },
         },
@@ -729,7 +729,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Spark+Plugs",
+            url: "/engine-repair-kit.png",
             altText: "Süüteküünalde Komplekt",
           },
         },
@@ -767,7 +767,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Chain+Sprocket+Kit",
+            url: "/engine-repair-kit.png",
             altText: "Keti ja Hammasrattaste Komplekt",
           },
         },
@@ -805,7 +805,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Air+Filter",
+            url: "/engine-repair-kit.png",
             altText: "Õhufiltri Element",
           },
         },
@@ -843,7 +843,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Fuel+Pump",
+            url: "/engine-repair-kit.png",
             altText: "Kütusepump",
           },
         },
@@ -881,7 +881,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Starter+Motor",
+            url: "/engine-repair-kit.png",
             altText: "Starteri Mootor",
           },
         },
@@ -919,7 +919,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Generator",
+            url: "/engine-repair-kit.png",
             altText: "Generaator",
           },
         },
@@ -957,7 +957,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Carburetor+Kit",
+            url: "/engine-repair-kit.png",
             altText: "Karburaatori Komplekt",
           },
         },
@@ -995,7 +995,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Fuel+Hose",
+            url: "/engine-repair-kit.png",
             altText: "Kütusevoolik",
           },
         },
@@ -1033,7 +1033,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Brake+Discs",
+            url: "/apollo-thunder-140cc-motorcycle.png",
             altText: "Piduri Kettad",
           },
         },
@@ -1071,7 +1071,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Shock+Springs",
+            url: "/apollo-thunder-140cc-motorcycle.png",
             altText: "Amortisaatori Vedrud",
           },
         },
@@ -1109,7 +1109,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Steering+Bearings",
+            url: "/apollo-thunder-140cc-motorcycle.png",
             altText: "Roolipea Laagrid",
           },
         },
@@ -1147,7 +1147,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Fuel+Tap",
+            url: "/apollo-thunder-140cc-motorcycle.png",
             altText: "Kütusekraan",
           },
         },
@@ -1187,7 +1187,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=LED+Headlight",
+            url: "/led-headlight.png",
             altText: "LED Esituli",
           },
         },
@@ -1225,7 +1225,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Mirror+Set",
+            url: "/led-headlight.png",
             altText: "Peeglite Komplekt",
           },
         },
@@ -1263,7 +1263,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Bluetooth+Speakers",
+            url: "/apollo-thunder-140cc-motorcycle.png",
             altText: "Bluetooth Kõlarid",
           },
         },
@@ -1301,7 +1301,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=USB+Charger",
+            url: "/led-headlight.png",
             altText: "USB Laadija",
           },
         },
@@ -1339,7 +1339,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Phone+Mount",
+            url: "/led-headlight.png",
             altText: "Telefoni Hoidik",
           },
         },
@@ -1377,7 +1377,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Cargo+Box",
+            url: "/apollo-thunder-140cc-motorcycle.png",
             altText: "Pagasikonteiner",
           },
         },
@@ -1415,7 +1415,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Windscreen",
+            url: "/apollo-thunder-140cc-motorcycle.png",
             altText: "Tuuletõke",
           },
         },
@@ -1453,7 +1453,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Grip+Covers",
+            url: "/apollo-thunder-140cc-motorcycle.png",
             altText: "Käepidemete Katteid",
           },
         },
@@ -1474,7 +1474,7 @@ const fallbackProducts = [
         {
           node: {
             id: "gid://shopify/ProductVariant/38",
-            availableForSable: true,
+            availableForSale: true,
             priceV2: { amount: "25.00", currencyCode: "EUR" },
           },
         },
@@ -1491,7 +1491,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Rear+Indicators",
+            url: "/led-headlight.png",
             altText: "Tagumised Vilkurid",
           },
         },
@@ -1529,7 +1529,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Motorcycle+Cover",
+            url: "/apollo-thunder-140cc-motorcycle.png",
             altText: "Mootorratta Kate",
           },
         },
@@ -1569,7 +1569,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Premium+Helmet",
+            url: "/motorcycle-helmet.png",
             altText: "Premium Kiiver",
           },
         },
@@ -1607,7 +1607,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Leather+Jacket",
+            url: "/motorcycle-helmet.png",
             altText: "Nahast Jakk",
           },
         },
@@ -1645,7 +1645,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Gloves",
+            url: "/motorcycle-helmet.png",
             altText: "Sõrmkindad",
           },
         },
@@ -1683,7 +1683,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Motorcycle+Boots",
+            url: "/motorcycle-helmet.png",
             altText: "Mootorratta Saapad",
           },
         },
@@ -1721,7 +1721,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Racing+Vest",
+            url: "/motorcycle-helmet.png",
             altText: "Võidusõidu Vest",
           },
         },
@@ -1759,7 +1759,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Protective+Pants",
+            url: "/motorcycle-helmet.png",
             altText: "Kaitsepüksid",
           },
         },
@@ -1797,7 +1797,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Back+Protector",
+            url: "/motorcycle-helmet.png",
             altText: "Seljakaitse",
           },
         },
@@ -1835,7 +1835,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Knee+Guards",
+            url: "/motorcycle-helmet.png",
             altText: "Põlvekaitsmed",
           },
         },
@@ -1873,7 +1873,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Rain+Gear",
+            url: "/motorcycle-helmet.png",
             altText: "Vihmariided",
           },
         },
@@ -1911,7 +1911,7 @@ const fallbackProducts = [
       edges: [
         {
           node: {
-            url: "/placeholder.svg?height=400&width=400&text=Thermal+Wear",
+            url: "/motorcycle-helmet.png",
             altText: "Termoriided",
           },
         },
@@ -1980,7 +1980,12 @@ const fallbackCollections = [
   },
 ]
 
-export async function getProducts(limit = 10) {
+export async function getProducts(limit = 250) {
+  // If requesting more than 250, use pagination
+  if (limit > 250) {
+    return await getAllProducts(limit)
+  }
+  
   const query = `
     query getProducts($first: Int!) {
       products(first: $first) {
@@ -2035,6 +2040,88 @@ export async function getProducts(limit = 10) {
   }
 
   return response.data.products.edges.map((edge: any) => edge.node)
+}
+
+async function getAllProducts(maxProducts = 400) {
+  let allProducts: any[] = []
+  let hasNextPage = true
+  let cursor = null
+  const batchSize = 250 // Shopify's max per request
+
+  while (hasNextPage && allProducts.length < maxProducts) {
+    const query = `
+      query getProducts($first: Int!, $after: String) {
+        products(first: $first, after: $after) {
+          edges {
+            cursor
+            node {
+              id
+              title
+              handle
+              description
+              descriptionHtml
+              images(first: 1) {
+                edges {
+                  node {
+                    url
+                    altText
+                  }
+                }
+              }
+              priceRange {
+                minVariantPrice {
+                  amount
+                  currencyCode
+                }
+              }
+              availableForSale
+              tags
+              productType
+              vendor
+              variants(first: 1) {
+                edges {
+                  node {
+                    id
+                    availableForSale
+                    priceV2 {
+                      amount
+                      currencyCode
+                    }
+                  }
+                }
+              }
+            }
+          }
+          pageInfo {
+            hasNextPage
+            endCursor
+          }
+        }
+      }
+    `
+
+    const variables: any = { first: Math.min(batchSize, maxProducts - allProducts.length) }
+    if (cursor) {
+      variables.after = cursor
+    }
+
+    const response = await shopifyFetch(query, variables)
+
+    if (!response?.data?.products) {
+      console.warn("Using fallback product data")
+      return fallbackProducts.slice(0, maxProducts)
+    }
+
+    const products = response.data.products.edges.map((edge: any) => edge.node)
+    allProducts = allProducts.concat(products)
+    
+    hasNextPage = response.data.products.pageInfo.hasNextPage
+    cursor = response.data.products.pageInfo.endCursor
+
+    console.log(`Fetched ${products.length} products, total: ${allProducts.length}`)
+  }
+
+  return allProducts
 }
 
 export async function getCollections(limit = 10) {
@@ -2157,7 +2244,7 @@ export async function getCollection(handle: string) {
         title
         handle
         description
-        products(first: 50) {
+        products(first: 100) {
           edges {
             node {
               id
@@ -2197,4 +2284,185 @@ export async function getCollection(handle: string) {
   }
 
   return response.data.collection
+}
+
+export async function getProductsByCollection(handle: string, limit = 100) {
+  // If requesting more than 250, use pagination
+  if (limit > 250) {
+    return await getAllProductsFromCollection(handle, limit)
+  }
+  
+  const query = `
+    query getCollection($handle: String!, $first: Int!) {
+      collection(handle: $handle) {
+        id
+        title
+        handle
+        description
+        products(first: $first) {
+          edges {
+            node {
+              id
+              title
+              handle
+              description
+              descriptionHtml
+              images(first: 1) {
+                edges {
+                  node {
+                    url
+                    altText
+                  }
+                }
+              }
+              priceRange {
+                minVariantPrice {
+                  amount
+                  currencyCode
+                }
+              }
+              availableForSale
+              tags
+              productType
+              vendor
+              variants(first: 1) {
+                edges {
+                  node {
+                    id
+                    availableForSale
+                    priceV2 {
+                      amount
+                      currencyCode
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `
+
+  const response = await shopifyFetch(query, { handle, first: limit })
+
+  if (!response?.data?.collection) {
+    console.warn(`Using fallback data for collection: ${handle}`)
+    const fallbackCollection = fallbackCollections.find((c) => c.handle === handle) || fallbackCollections[0]
+    return {
+      collection: fallbackCollection,
+      products: fallbackCollection.products.edges.map((edge: any) => edge.node).slice(0, limit)
+    }
+  }
+
+  return {
+    collection: response.data.collection,
+    products: response.data.collection.products.edges.map((edge: any) => edge.node)
+  }
+}
+
+async function getAllProductsFromCollection(handle: string, maxProducts = 400) {
+  let allProducts: any[] = []
+  let hasNextPage = true
+  let cursor = null
+  let collection = null
+  const batchSize = 250 // Shopify's max per request
+
+  while (hasNextPage && allProducts.length < maxProducts) {
+    const query = `
+      query getCollection($handle: String!, $first: Int!, $after: String) {
+        collection(handle: $handle) {
+          id
+          title
+          handle
+          description
+          products(first: $first, after: $after) {
+            edges {
+              cursor
+              node {
+                id
+                title
+                handle
+                description
+                descriptionHtml
+                images(first: 1) {
+                  edges {
+                    node {
+                      url
+                      altText
+                    }
+                  }
+                }
+                priceRange {
+                  minVariantPrice {
+                    amount
+                    currencyCode
+                  }
+                }
+                availableForSale
+                tags
+                productType
+                vendor
+                variants(first: 1) {
+                  edges {
+                    node {
+                      id
+                      availableForSale
+                      priceV2 {
+                        amount
+                        currencyCode
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            pageInfo {
+              hasNextPage
+              endCursor
+            }
+          }
+        }
+      }
+    `
+
+    const variables: any = { handle, first: Math.min(batchSize, maxProducts - allProducts.length) }
+    if (cursor) {
+      variables.after = cursor
+    }
+
+    const response = await shopifyFetch(query, variables)
+
+    if (!response?.data?.collection) {
+      console.warn(`Using fallback data for collection: ${handle}`)
+      const fallbackCollection = fallbackCollections.find((c) => c.handle === handle) || fallbackCollections[0]
+      return {
+        collection: fallbackCollection,
+        products: fallbackCollection.products.edges.map((edge: any) => edge.node).slice(0, maxProducts)
+      }
+    }
+
+    // Store collection info on first request
+    if (!collection) {
+      collection = {
+        id: response.data.collection.id,
+        title: response.data.collection.title,
+        handle: response.data.collection.handle,
+        description: response.data.collection.description
+      }
+    }
+
+    const products = response.data.collection.products.edges.map((edge: any) => edge.node)
+    allProducts = allProducts.concat(products)
+    
+    hasNextPage = response.data.collection.products.pageInfo.hasNextPage
+    cursor = response.data.collection.products.pageInfo.endCursor
+
+    console.log(`Fetched ${products.length} products from collection ${handle}, total: ${allProducts.length}`)
+  }
+
+  return {
+    collection,
+    products: allProducts
+  }
 }

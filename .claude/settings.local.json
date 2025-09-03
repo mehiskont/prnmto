@@ -6,7 +6,13 @@
       "Bash(pkill:*)",
       "Bash(node:*)",
       "Bash(grep:*)",
-      "Bash(lsof:*)"
+      "Bash(lsof:*)",
+      "Bash(npm run build:*)",
+      "Bash(pm2 start npm:*)",
+      "Bash(pm2 logs:*)",
+      "Bash(sed:*)",
+      "Bash(echo:*)",
+      "Bash(pm2 restart:*)"
     ],
     "deny": []
   }
